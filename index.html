@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VRII</title>
+    <title>VRS</title>
+
     <link
       rel="stylesheet"
-      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <!--Navbar-->
-    <nav
-      class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
-      data-bs-theme="dark"
-    >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid position-relative">
-        <a class="navbar-brand fw-bold" href="index.html">VRII</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="VRS logo" width="50" />
+        </a>
 
         <button
           class="navbar-toggler"
@@ -39,11 +40,7 @@
               <a class="nav-link active" href="index.html">Home</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
-            </li>
-
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mega-dropdown position-static">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -51,27 +48,58 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Categories
+                Collections
               </a>
 
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="phone-cases.html"
-                    >Phone Cases</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="chargers.html">Chargers</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="earphones.html">Earphones</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="screen-protectors.html"
-                    >Screen Protectors</a
-                  >
-                </li>
-              </ul>
+              <div class="dropdown-menu mega-menu">
+                <div class="container">
+                  <div class="row py-4">
+                    <!-- Column 1 -->
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <h6 class="fw-bold">Phone Cases</h6>
+                      <a class="dropdown-item" href="phone-cases.html">
+                        iPhone Cases
+                      </a>
+                      <a class="dropdown-item" href="samsung-cases.html">
+                        Samsung Cases
+                      </a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <h6 class="fw-bold">Chargers</h6>
+                      <a class="dropdown-item" href="chargers.html">
+                        Fast Chargers
+                      </a>
+                      <a class="dropdown-item" href="wireless-chargers.html">
+                        Wireless Chargers
+                      </a>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <h6 class="fw-bold">Audio</h6>
+                      <a class="dropdown-item" href="earphones.html">
+                        Earphones
+                      </a>
+                      <a class="dropdown-item" href="headphones.html">
+                        Headphones
+                      </a>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <h6 class="fw-bold">Accessories</h6>
+                      <a class="dropdown-item" href="screen-protectors.html">
+                        Screen Protectors
+                      </a>
+                      <a class="dropdown-item" href="camera-protectors.html">
+                        Camera Protectors
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
 
             <li class="nav-item">
@@ -90,14 +118,23 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-light" type="submit">Search</button>
+            <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
-    <!--End Navbar-->
-    
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <!-- End Navbar -->
+
+    <div class="container-fluid p-0">
+      <img
+        src="assets/images/banners/banner2.png"
+        class="img-fluid w-100 banner-img"
+        alt="VRS Phone Accessories Banner"
+      />
+    </div>
+    <h1>Welcome</h1>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
